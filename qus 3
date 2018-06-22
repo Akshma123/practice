@@ -1,0 +1,27 @@
+class Student
+{
+ int studentId=1;
+ String name="akshma";
+ String courseId="1234";
+ String sex="female";
+ String phoneNo="8006676900";
+}
+class Hosteller extends Student
+{
+ String hostleName="sbvm";
+ int roomNumber=105;
+ public void display()
+ {
+  System.out.println(studentId+"  "+name+"  "+courseId+"  "+sex+" "+phoneNo+" "+roomNumber);
+ }
+}
+class TestStudent
+{
+ public static void main(String[] args)
+ {
+  Hosteller h=new Hosteller();
+  h.phoneNo="9719094918";
+  h.roomNumber=101;
+  h.display();
+ }
+}
