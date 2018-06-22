@@ -1,0 +1,44 @@
+class Employee
+{
+ String name;
+ double salary;
+ Employee(String name,double salary)
+ {
+  this.name=name;
+  this.salary=salary;
+ }
+}
+class Manager extends Employee
+{
+ String department;
+ Manager(String department)
+ {
+  super("akshma",40000.0);
+  this.department=department;
+ }
+ public String toString()
+ {
+   //System.out.println(name+" "+department+" "+salary);
+   return (name+" "+department+" "+salary);
+ }
+}
+class Executive extends Manager
+{
+ Executive()
+ {
+  super("sales and marketting");
+ }
+ public String toString()
+ {
+  //System.out.println("Executive "+super.toString());
+   return ("executive "+super.toString());
+ }
+}
+class TestEmployee
+{
+ public static void main(String[] args)
+ {
+  Executive e=new Executive();
+  System.out.println(e.toString());
+ }
+}
